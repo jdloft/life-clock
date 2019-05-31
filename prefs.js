@@ -35,7 +35,7 @@ const LifeclockPrefsWidget = new GObject.Class({
     this._settings = Convenience.getSettings();
     this._settings.bind('end-date', entry, 'text', Gio.SettingsBindFlags.DEFAULT);
 
-    let primaryText = _("Enter a rough date for your life expectancy in the form yyyy-mm-dd\n");
+    let primaryText = _("Enter a rough date for your life expectancy (YYYY-MM-DD)\n");
 
     this.add(new Gtk.Label({ label: primaryText,
       wrap: true, xalign: 0 }));
